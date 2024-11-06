@@ -81,6 +81,7 @@ export default function IssueCreationDrawer({
       reset();
       onClose();
       onIssueCreated();
+      document.body.style.overflow = 'auto';
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newIssue, createIssueLoading]);
